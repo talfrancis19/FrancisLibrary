@@ -1,0 +1,35 @@
+﻿<Window x:Class="FrancisLibrary.ManageItemsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrancisLibrary"
+        mc:Ignorable="d"
+        Title="ManageItemsPage" WindowState="Maximized" Height="1080" Width="1920">
+    <Grid>
+        <Image Source="Pictures/LibraryOption.jpg" Margin="-258,-210,-258,-96"/>
+        <TextBlock x:Name="WelcomeText" HorizontalAlignment="Left" Margin="763,107,0,0" Text="Manage Items Page" Height="188" Width="294" FontSize="48" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" FontFamily="Lucida Bright" TextWrapping="Wrap" FontStyle="Italic"/>
+        <ListView Name="listViewItems" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="586,258,686,153" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Title"  DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Header="CatalogID"  DisplayMemberBinding="{Binding CatalogID}"/>
+                    <GridViewColumn Header="Genre"  DisplayMemberBinding="{Binding Genre}"/>
+                    <GridViewColumn Header="Author"  DisplayMemberBinding="{Binding Author}"/>
+                    <GridViewColumn Header="Publisher"  DisplayMemberBinding="{Binding Publisher}"/>
+                    <GridViewColumn Header="Company"  DisplayMemberBinding="{Binding Company}"/>
+                    <GridViewColumn Header="ItemID"  DisplayMemberBinding="{Binding ItemID}"/>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+        <Button Content="Add Item" Canvas.Left="43" Canvas.Top="12" Height="32" Width="118" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="653,937,0,0" Click="AddItemWindow_Click" RenderTransformOrigin="1.22,0.282" Foreground="#FFFFF5F5" Background="#FFC14646" BorderBrush="Black"/>
+        <Button x:Name="removeItem" Content="Remove Item" Height="32" Width="118" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1052,937,0,0" Foreground="#FFFFF5F5" Background="#FFB94646" BorderBrush="Black" Click="removeItemWindow_Click"/>
+        <Button x:Name="backToLibraryOptionsPage" Content="Back To Library&#xD;&#xA; Options Page" HorizontalAlignment="Left" Margin="1706,42,0,0" VerticalAlignment="Top" Height="54" Width="181" FontSize="14" Click="backToLibraryOptionsPage_Click"/>
+
+
+
+
+
+    </Grid>
+</Window>

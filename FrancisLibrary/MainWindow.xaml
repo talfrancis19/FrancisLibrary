@@ -1,0 +1,29 @@
+﻿<Window x:Class="FrancisLibrary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrancisLibrary"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" Height="1080" Width="1920">
+    <Grid>
+        <Image Source="Pictures/LP.jpg" Margin="-263,-299,-221,0"/>
+        <TextBlock x:Name="WelcomeText"  HorizontalAlignment="Left" Margin="775,60,0,0" Text="Welcome to Francis Library" Height="188" Width="294" FontSize="48" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" FontFamily="Lucida Bright" TextWrapping="Wrap" FontStyle="Italic" Foreground="#FFF9F7F7"/>
+        <Canvas Background="white" Margin="733,294,809,382">
+            <TextBlock Canvas.Left="95" TextWrapping="Wrap" Text="Enter User Information" Canvas.Top="27" Height="60" Width="188" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" Foreground="#FF040404" FontWeight="Bold"/>
+            <TextBox Name="txtUsername" Canvas.Left="193" TextWrapping="Wrap" Canvas.Top="152" Width="144" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.481,1.575"/>
+            <TextBlock Canvas.Left="45" TextWrapping="Wrap" Text="Username:" Canvas.Top="152" HorizontalAlignment="Left" VerticalAlignment="Center" Width="84" FontSize="16"/>
+            <TextBlock Canvas.Left="50" TextWrapping="Wrap" Text="Password:" Canvas.Top="219" Width="74" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"/>
+            <PasswordBox Name="txtPassword" Canvas.Left="193" Canvas.Top="219" Width="144" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25"/>
+            <Button Content="Login" Canvas.Left="212" Canvas.Top="282" HorizontalAlignment="Center" VerticalAlignment="Top" Width="106" Height="32" Click="Button_Click_1">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Canvas>
+
+    </Grid>
+</Window>

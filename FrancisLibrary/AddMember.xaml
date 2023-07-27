@@ -1,0 +1,25 @@
+﻿<Window x:Class="FrancisLibrary.AddMember"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrancisLibrary"
+        mc:Ignorable="d"
+        Title="AddMember" Height="400" Width="400">
+    <Grid >
+        <TextBlock HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" Text="Add Member Window " VerticalAlignment="Top" Height="21" FontSize="16" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="77,120,0,0" TextWrapping="Wrap" Text="Enter Username:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="77,0,0,0" TextWrapping="Wrap" Text="Enter Password:" VerticalAlignment="Center"/>
+        <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Margin="213,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="213,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="AddNewMember" HorizontalAlignment="Left" Margin="226,245,0,0" VerticalAlignment="Top" Height="22" Click="AddNewMember_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

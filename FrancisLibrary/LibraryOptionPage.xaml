@@ -1,0 +1,29 @@
+﻿<Window x:Class="FrancisLibrary.LibraryOptionPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrancisLibrary"
+        mc:Ignorable="d"
+        Title="LibraryOptionPage" WindowState="Maximized" Height="1080" Width="1920">
+    <Grid>
+        <Image Source="Pictures/LibraryOption.jpg" Margin="-258,-210,-258,-96"/>
+        <TextBlock x:Name="WelcomeText" HorizontalAlignment="Left" Margin="800,145,0,0" Text="Library Options Page" Height="182" Width="280" FontSize="48" VerticalAlignment="Top" TextAlignment="Center" FontWeight="Bold" FontFamily="Lucida Bright" TextWrapping="Wrap" FontStyle="Italic"/>
+        <Button Name="enterLibrarianPage" Margin="515,385,1125,435" Content="Enter Librarian&#xA;   Main Page" FontSize="36" Click="enterLibrarianPage_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Pictures/bookPicture.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="manageItemPage" Margin="1126,385,514,435" Content="Manage Items" FontSize="36" Click="manageItemPage_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Pictures/bookPicture.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="backToWelcomePage" Content="Back to Welcome Page" HorizontalAlignment="Left" Margin="1691,78,0,0" VerticalAlignment="Top" Height="34" Width="164" FontSize="14" Click="backToWelcomePage_Click"/>
+        <Button x:Name="DailyReportPage" Margin="820,671,820,149" Content="Daily Report Page" FontSize="34" Click="DailyReportWindow_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Pictures/bookPicture.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
